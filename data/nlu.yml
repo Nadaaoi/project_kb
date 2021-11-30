@@ -47,14 +47,14 @@ nlu:
     - ganti
     - Ganti 
 
-- intent: KG_ku
+- intent: G_ku
   examples: |
     - kata ganti kata ku
     - kata ganti ku 
     - ku
     - Ku
     - Kata Ganti Ku
-    - Saya pilih kata ganti Ku
+    - Saya pilih kata ganti ku
     - Saya pilih kata ganti ku
 
 - intent: KG_kau
@@ -109,14 +109,11 @@ nlu:
     - Saya pilih kata sandang si
     - Saya pilih kata sandang Si
 
-- intent: KS_sang
+- intent: S_sang
   examples: |
     - kata ganti sandang sang
     - kata ganti sang 
     - sang
-    - Sang
-    - Kata Ganti Sang
-    - Saya pilih kata sandang sang
     - Saya pilih kata sandang Sang
 
 - intent: titik
@@ -155,13 +152,10 @@ nlu:
     - Penggunaan titik pada bilangan
  
 
-- intent: t_alamat
+- intent: ttk_alamat
   examples: |
     - titik alamat
-    - Titik Alamat
     - alamat
-    - Alamat
-    - penggunaan titik alamat
     - Penggunaan titik alamat
     - Penggunaan titik pada alamat
  

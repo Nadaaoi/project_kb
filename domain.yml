@@ -5,17 +5,17 @@ intents:
 - menyapa
 - tolak
 - kataganti
-- KG_ku
+- G_ku
 - KG_kau
 - KG_mu
 - KG_nya
 - katasandang
 - KS_si
-- KS_sang
+- S_sang
 - titik
 - t_akhir
 - t_bilangan
-- t_alamat
+- ttk_alamat
 - koma
 - k_antarkata
 - k_penghubung
@@ -23,21 +23,21 @@ intents:
 - k_angkadesimal
 responses:
   utter_greet:
-  - text: "Hallo kak, Ada yang bisa saya bantu? \n Saya dapat membantu anda dalam\
-      \ memberikan contoh penggunaaan kata ganti, sandang, tanda titik serta koma\
-      \ sesuai dengan PUEBI loh (: \n Silahkah memilih dibawah ini ya ((: \n ===========================\
-      \ \n 1). Kata Ganti \n 2). Kata Sandang  \n 3). Penggunaan Kata Titik  \n 4).\
-      \ Penggunaan Kata Koma  \n =========================== \n Mana yang ingin kamu\
-      \ pilih? Silahan ketik yaaaa (:"
+  - text: "Hallo kak selamat datang di chatbot kelompok 4 ! ada yang bisa saya bantu? \n Saya dapat membantu anda dalam\
+      \ memberikan contoh penggunaaan kata ganti, sandang, tanda titik serta tanda koma\
+      \ sesuai dengan PUEBI loh ! Silahkah memilih dibawah ini ya : \n =========================\
+      \ \n 1). Kata Ganti \ \n 2). Kata Sandang  \n 3). Penggunaan Kata Titik  \n 4).\
+      \ Penggunaan Kata Koma  \n ========================= \n Mana yang ingin kamu\
+      \ pilih? silahkan ketik yaaaa !"
   utter_bye:
   - text: "Yahhhh sayang sekali kak kita harus berpisah ):\n Terimakasih telah menggunakan\
-      \ layanan chatbot PUEBI kelompok 4 !!!\n Sampai Jumpa Lagi Yaaaa (:"
+      \ layanan chatbot PUEBI kelompok 4 !!!\n Sampai jumpa lagi yaaaa !"
   utter_kataganti:
   - text: "Anda telah memilih KATA GANTI ! Kata ganti biasanya digunakan untuk kata\
-      \ benda atau orang tertentu.\n Silahkan memilih sub menu kata ganti yaa (:\n\
-      \ 1). Kata ganti ku  \n 2). Kata ganti kau  \n 3). Kata ganti -mu  \n 4). Kata\
-      \ ganti -nya  \n Mana yang ingin kamu pilih? Silahan ketik yaaaa (:"
-  utter_KG_ku:
+      \ benda atau orang tertentu.\n Silahkan memilih sub menu kata ganti yaa : \ \n
+       1). Kata ganti ku \ \n 2). Kata ganti kau \ \n 3). Kata ganti -mu \ \n 4). Kata\
+      \ ganti -nya  \n Mana yang ingin kamu pilih? silahkan ketik yaaaa !"
+  utter_G_ku:
   - text: "Contoh penerapan kata ganti ku adalah : \n Rumah itu telah kujual  \n \n\
       \ Apakah ada yang bisa saya bantu lagi?"
   utter_KG_kau:
@@ -52,36 +52,36 @@ responses:
   utter_katasandang:
   - text: "Anda telah memilih KATA SANDANG ! Kata sandang sendiri biasa digunakan\
       \ kata yang tidak memiliki arti tapi menjelaskan nomina. \n Silahkan memilih\
-      \ contoh kata sandang yaa (:\n 1). Kata sandang Si  \n 2). Kata sandang Sang\
-      \  \n Mana yang ingin kamu pilih? Silahan ketik yaaaa (:"
+      \ contoh kata sandang yaa : \ \n 1). Kata sandang Si  \n 2). Kata sandang Sang\
+      \  \n Mana yang ingin kamu pilih? silahkan ketik yaaaa !"
   utter_KS_si:
   - text: "Contoh penerapan kata sandang si adalah : \n Surat itu dikembalikan kepada\
       \ si pengirim  \n \n Apakah ada yang bisa saya bantu lagi?"
-  utter_KS_sang:
+  utter_S_sang:
   - text: "Contoh penerapan kata sandang sang adalah : \n Sang adik mematuhi nasihat\
       \ sang kakak  \n \n Apakah ada yang bisa saya bantu lagi?"
   utter_titik:
   - text: "Anda telah memilih PENGGUNAAN TITIK ! Biasanya titik digunakan untuk mengakhiri\
       \ sebuah kalimat. Namun tidak hanya itu loh kegunaannya! \n Silahkan memilih\
-      \ sub menu penggunaaan titik yaa (:\n 1). Penggunaan titik pada akhir kata \
+      \ sub menu penggunaaan titik yaa : \ \n 1). Penggunaan titik pada akhir kata \
       \ \n 2). Penggunaan titik pada bilangan  \n 3). Penggunaan titik pada alamat\
-      \  \n Mana yang ingin kamu pilih? Silahan ketik yaaaa (:"
+      \  \n Mana yang ingin kamu pilih? silahkan ketik yaaaa !"
   utter_t_akhir:
   - text: "Contoh penerapan penggunaaan titik pada akhir kata adalah : \n Mereka duduk\
       \ disana.  \n \n Apakah ada yang bisa saya bantu lagi?"
   utter_t_bilangan:
   - text: "Contoh penerapan penggunaaan titik pada bilangan adalah : \n Indonesia\
       \ memiliki lebih dari 13.000 pulau.  \n \n Apakah ada yang bisa saya bantu lagi?"
-  utter_t_alamat:
+  utter_ttk_alamat:
   - text: "Contoh penerapan penggunaaan titik pada alamat adalah : \n Jln. Malioboro\
       \  \n \n Apakah ada yang bisa saya bantu lagi?"
   utter_koma:
   - text: "Anda telah memilih PENGGUNAAN KOMA ! Penggunaan koma bisa dipakai untuk\
       \ memisahkan kalimat. Namun tidak hanya itu loh fungsinya ! \n Silahkan memilih\
-      \ sub menu penggunaaan koma yaa (:\n 1). Penggunaan koma pada antar kata  \n\
+      \ sub menu penggunaaan koma yaa : \ \n 1). Penggunaan koma pada antar kata  \n\
       \ 2). Penggunaan koma pada penghubung  \n 3). Penggunaan koma pada pemisah \
       \ \n 4). Penggunaan koma pada angka desimal  \n Mana yang ingin kamu pilih?\
-      \ Silahan ketik yaaaa (:"
+      \ silahkan ketik yaaaa (:"
   utter_k_antarkata:
   - text: "Contoh penerapan penggunaaan koma pada antar kata adalah : \n Telepon seluler,\
       \ komputer, atau internet bukanlah barang asing lagi.  \n \n Apakah ada yang\

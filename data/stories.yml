@@ -12,37 +12,27 @@ stories:
     - intent: tolak
     - action: utter_bye
 
-# - story: ulang
-#   steps :
-#     - intent: terima
-#     - action: utter_greet
-
-- story: KG_ku
+- story: G_ku
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
+
     - intent: kataganti
     - action: utter_kataganti
-    - intent: KG_ku
-    - action: utter_KG_ku
+    - intent: G_ku
+    - action: utter_G_ku
     - intent: tolak
     - action: utter_bye
 
-- story: KG_ku ulang
+- story: G_ku ulang
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: kataganti
     - action: utter_kataganti
-    - intent: KG_ku
-    - action: utter_KG_ku
+    - intent: G_ku
+    - action: utter_G_ku
     - intent: menyapa
     - action: utter_greet
 
 - story: KG_kau
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: kataganti
     - action: utter_kataganti
     - intent: KG_kau
@@ -52,8 +42,6 @@ stories:
 
 - story: KG_kau ulang
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: kataganti
     - action: utter_kataganti
     - intent: KG_kau
@@ -63,8 +51,6 @@ stories:
 
 - story: KG_mu
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: kataganti
     - action: utter_kataganti
     - intent: KG_mu
@@ -74,8 +60,6 @@ stories:
 
 - story: KG_mu ulang
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: kataganti
     - action: utter_kataganti
     - intent: KG_mu
@@ -85,8 +69,6 @@ stories:
 
 - story: KG_nya
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: kataganti
     - action: utter_kataganti
     - intent: KG_nya
@@ -96,8 +78,6 @@ stories:
 
 - story: KG_nya ulang
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: kataganti
     - action: utter_kataganti
     - intent: KG_nya
@@ -107,8 +87,6 @@ stories:
 
 - story: KS_si
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: katasandang
     - action: utter_katasandang
     - intent: KS_si
@@ -118,8 +96,6 @@ stories:
 
 - story: KS_si ulang
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: katasandang
     - action: utter_katasandang
     - intent: KS_si
@@ -127,32 +103,26 @@ stories:
     - intent: menyapa
     - action: utter_greet
 
-- story: KS_sang
+- story: S_sang
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: katasandang
     - action: utter_katasandang
-    - intent: KS_sang
-    - action: utter_KS_sang
+    - intent: S_sang
+    - action: utter_S_sang
     - intent: tolak
     - action: utter_bye
 
-- story: KS_sang ulang
+- story: S_sang ulang
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: katasandang
     - action: utter_katasandang
-    - intent: KS_sang
-    - action: utter_KS_sang
+    - intent: S_sang
+    - action: utter_S_sang
     - intent: menyapa
     - action: utter_greet
 
 - story: t_akhirkata
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: titik
     - action: utter_titik
     - intent: t_akhir
@@ -162,8 +132,6 @@ stories:
 
 - story: t_akhirkata ulang
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: titik
     - action: utter_titik
     - intent: t_akhir
@@ -173,8 +141,6 @@ stories:
 
 - story: t_bilangan
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: titik
     - action: utter_titik
     - intent: t_bilangan
@@ -184,8 +150,6 @@ stories:
 
 - story: t_bilangan ulang
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: titik
     - action: utter_titik
     - intent: t_bilangan
@@ -193,32 +157,26 @@ stories:
     - intent: menyapa
     - action: utter_greet
 
-- story: t_alamat
+- story: ttk_alamat
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: titik
     - action: utter_titik
-    - intent: t_alamat
-    - action: utter_t_alamat
+    - intent: ttk_alamat
+    - action: utter_ttk_alamat
     - intent: tolak
     - action: utter_bye
 
-- story: t_alamat ulang
+- story: ttk_alamat ulang
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: titik
     - action: utter_titik
-    - intent: t_alamat
-    - action: utter_t_alamat
+    - intent: ttk_alamat
+    - action: utter_ttk_alamat
     - intent: menyapa
     - action: utter_greet
 
 - story: k_antarkata
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: koma
     - action: utter_koma
     - intent: k_antarkata
@@ -228,8 +186,6 @@ stories:
 
 - story: k_antarkata ulang
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: koma
     - action: utter_koma
     - intent: k_antarkata
@@ -239,8 +195,6 @@ stories:
 
 - story: k_penghubung
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: koma
     - action: utter_koma
     - intent: k_penghubung
@@ -250,8 +204,6 @@ stories:
 
 - story: k_penghubung ulang
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: koma
     - action: utter_koma
     - intent: k_penghubung
@@ -261,8 +213,6 @@ stories:
 
 - story: k_pemisah
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: koma
     - action: utter_koma
     - intent: k_pemisah
@@ -272,8 +222,6 @@ stories:
 
 - story: k_pemisah ulang
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: koma
     - action: utter_koma
     - intent: k_pemisah
@@ -283,8 +231,6 @@ stories:
 
 - story: k_angkadesimal
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: koma
     - action: utter_koma
     - intent: k_angkadesimal
@@ -294,8 +240,6 @@ stories:
 
 - story: k_angkadesimal ulang
   steps:
-    # - intent: menyapa
-    # - action: utter_greet
     - intent: koma
     - action: utter_koma
     - intent: k_angkadesimal
