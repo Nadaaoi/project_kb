@@ -1,6 +1,13 @@
 version: "2.0"
 nlu:
 
+- intent: nama_saya
+  examples: |
+    - hai nama saya [Nada](nama)
+    - hai nama saya [Rossa](nama)
+    - hai nama saya [Fery](nama)
+    - hai nama saya [Bagas](nama)
+
 - intent: menyapa
   examples: |
     - hai
@@ -16,6 +23,7 @@ nlu:
     - ya 
     - yes
     - ada
+    - mau tanya
     - lagi
 
 - intent: tolak
@@ -27,14 +35,6 @@ nlu:
     - no
     - gk 
     - cukup
-
-# - intent: terima
-#   examples: |
-#     - iya
-#     - ya 
-#     - yes
-#     - ada
-#     - lagi
 
 - intent: kataganti
   examples: |

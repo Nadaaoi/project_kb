@@ -1,98 +1,187 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- menyapa
-- tolak
-- kataganti
-- G_ku
-- KG_kau
-- KG_mu
-- KG_nya
-- katasandang
-- KS_si
-- S_sang
-- titik
-- t_akhir
-- t_bilangan
-- ttk_alamat
-- koma
-- k_antarkata
-- k_penghubung
-- k_pemisah
-- k_angkadesimal
+- menyapa:
+    use_entities: true
+- tolak:
+    use_entities: true
+- kataganti:
+    use_entities: true
+- G_ku:
+    use_entities: true
+- KG_kau:
+    use_entities: true
+- KG_mu:
+    use_entities: true
+- KG_nya:
+    use_entities: true
+- katasandang:
+    use_entities: true
+- KS_si:
+    use_entities: true
+- S_sang:
+    use_entities: true
+- titik:
+    use_entities: true
+- t_akhir:
+    use_entities: true
+- t_bilangan:
+    use_entities: true
+- ttk_alamat:
+    use_entities: true
+- koma:
+    use_entities: true
+- k_antarkata:
+    use_entities: true
+- k_penghubung:
+    use_entities: true
+- k_pemisah:
+    use_entities: true
+- k_angkadesimal:
+    use_entities: true
+- nama_saya:
+    use_entities: true
+entities:
+- nama
+slots:
+  nama:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
 responses:
   utter_greet:
-  - text: "Hallo kak selamat datang di chatbot kelompok 4 ! ada yang bisa saya bantu? \n Saya dapat membantu anda dalam\
-      \ memberikan contoh penggunaaan kata ganti, sandang, tanda titik serta tanda koma\
-      \ sesuai dengan PUEBI loh ! Silahkah memilih dibawah ini ya : \n =========================\
-      \ \n 1). Kata Ganti \ \n 2). Kata Sandang  \n 3). Penggunaan Kata Titik  \n 4).\
-      \ Penggunaan Kata Koma  \n ========================= \n Mana yang ingin kamu\
-      \ pilih? silahkan ketik yaaaa !"
+  - text: |-
+      Selamat datang di chatbot kelompok 4 ! ada yang bisa saya bantu? 
+       Saya dapat membantu anda dalam memberikan contoh penggunaaan kata ganti, sandang, tanda titik serta tanda koma sesuai dengan PUEBI loh ! Silahkah memilih dibawah ini ya : 
+       ========================= 
+       1). Kata Ganti  
+       2). Kata Sandang  
+       3). Penggunaan Kata Titik  
+       4). Penggunaan Kata Koma  
+       ========================= 
+       Mana yang ingin kamu pilih? silahkan ketik yaaaa !
   utter_bye:
-  - text: "Yahhhh sayang sekali kak kita harus berpisah ):\n Terimakasih telah menggunakan\
-      \ layanan chatbot PUEBI kelompok 4 !!!\n Sampai jumpa lagi yaaaa !"
+  - text: |-
+      Yahhhh sayang sekali kak kita harus berpisah ):
+       Terimakasih telah menggunakan layanan chatbot PUEBI kelompok 4 !!!
+       Sampai jumpa lagi yaaaa !
   utter_kataganti:
-  - text: "Anda telah memilih KATA GANTI ! Kata ganti biasanya digunakan untuk kata\
-      \ benda atau orang tertentu.\n Silahkan memilih sub menu kata ganti yaa : \ \n
-       1). Kata ganti ku \ \n 2). Kata ganti kau \ \n 3). Kata ganti -mu \ \n 4). Kata\
-      \ ganti -nya  \n Mana yang ingin kamu pilih? silahkan ketik yaaaa !"
+  - text: |-
+      Anda telah memilih KATA GANTI ! Kata ganti biasanya digunakan untuk kata benda atau orang tertentu.
+       Silahkan memilih sub menu kata ganti yaa :  
+       1). Kata ganti ku  
+       2). Kata ganti kau  
+       3). Kata ganti -mu  
+       4). Kata ganti -nya  
+       Mana yang ingin kamu pilih? silahkan ketik yaaaa !
   utter_G_ku:
-  - text: "Contoh penerapan kata ganti ku adalah : \n Rumah itu telah kujual  \n \n\
-      \ Apakah ada yang bisa saya bantu lagi?"
+  - text: |-
+      Contoh penerapan kata ganti ku adalah : 
+       Rumah itu telah kujual  
+       
+       Apakah ada yang bisa saya bantu lagi?
   utter_KG_kau:
-  - text: "Contoh penerapan kata ganti kau adalah : \n Majalah ini boleh kau baca\
-      \  \n \n Apakah ada yang bisa saya bantu lagi?"
+  - text: |-
+      Contoh penerapan kata ganti kau adalah : 
+       Majalah ini boleh kau baca  
+       
+       Apakah ada yang bisa saya bantu lagi?
   utter_KG_mu:
-  - text: "Contoh penerapan kata ganti mu adalah : \n Bukumu tersimpan di perpustakaan\
-      \  \n \n Apakah ada yang bisa saya bantu lagi?"
+  - text: |-
+      Contoh penerapan kata ganti mu adalah : 
+       Bukumu tersimpan di perpustakaan  
+       
+       Apakah ada yang bisa saya bantu lagi?
   utter_KG_nya:
-  - text: "Contoh penerapan kata ganti nya adalah : \n Rumahnya sedang diperbaiki\
-      \  \n \n Apakah ada yang bisa saya bantu lagi?"
+  - text: |-
+      Contoh penerapan kata ganti nya adalah : 
+       Rumahnya sedang diperbaiki  
+       
+       Apakah ada yang bisa saya bantu lagi?
   utter_katasandang:
-  - text: "Anda telah memilih KATA SANDANG ! Kata sandang sendiri biasa digunakan\
-      \ kata yang tidak memiliki arti tapi menjelaskan nomina. \n Silahkan memilih\
-      \ contoh kata sandang yaa : \ \n 1). Kata sandang Si  \n 2). Kata sandang Sang\
-      \  \n Mana yang ingin kamu pilih? silahkan ketik yaaaa !"
+  - text: |-
+      Anda telah memilih KATA SANDANG ! Kata sandang sendiri biasa digunakan kata yang tidak memiliki arti tapi menjelaskan nomina. 
+       Silahkan memilih contoh kata sandang yaa :  
+       1). Kata sandang Si  
+       2). Kata sandang Sang  
+       Mana yang ingin kamu pilih? silahkan ketik yaaaa !
   utter_KS_si:
-  - text: "Contoh penerapan kata sandang si adalah : \n Surat itu dikembalikan kepada\
-      \ si pengirim  \n \n Apakah ada yang bisa saya bantu lagi?"
+  - text: |-
+      Contoh penerapan kata sandang si adalah : 
+       Surat itu dikembalikan kepada si pengirim  
+       
+       Apakah ada yang bisa saya bantu lagi?
   utter_S_sang:
-  - text: "Contoh penerapan kata sandang sang adalah : \n Sang adik mematuhi nasihat\
-      \ sang kakak  \n \n Apakah ada yang bisa saya bantu lagi?"
+  - text: |-
+      Contoh penerapan kata sandang sang adalah : 
+       Sang adik mematuhi nasihat sang kakak  
+       
+       Apakah ada yang bisa saya bantu lagi?
   utter_titik:
-  - text: "Anda telah memilih PENGGUNAAN TITIK ! Biasanya titik digunakan untuk mengakhiri\
-      \ sebuah kalimat. Namun tidak hanya itu loh kegunaannya! \n Silahkan memilih\
-      \ sub menu penggunaaan titik yaa : \ \n 1). Penggunaan titik pada akhir kata \
-      \ \n 2). Penggunaan titik pada bilangan  \n 3). Penggunaan titik pada alamat\
-      \  \n Mana yang ingin kamu pilih? silahkan ketik yaaaa !"
+  - text: |-
+      Anda telah memilih PENGGUNAAN TITIK ! Biasanya titik digunakan untuk mengakhiri sebuah kalimat. Namun tidak hanya itu loh kegunaannya! 
+       Silahkan memilih sub menu penggunaaan titik yaa :  
+       1). Penggunaan titik pada akhir kata  
+       2). Penggunaan titik pada bilangan  
+       3). Penggunaan titik pada alamat  
+       Mana yang ingin kamu pilih? silahkan ketik yaaaa !
   utter_t_akhir:
-  - text: "Contoh penerapan penggunaaan titik pada akhir kata adalah : \n Mereka duduk\
-      \ disana.  \n \n Apakah ada yang bisa saya bantu lagi?"
+  - text: |-
+      Contoh penerapan penggunaaan titik pada akhir kata adalah : 
+       Mereka duduk disana.  
+       
+       Apakah ada yang bisa saya bantu lagi?
   utter_t_bilangan:
-  - text: "Contoh penerapan penggunaaan titik pada bilangan adalah : \n Indonesia\
-      \ memiliki lebih dari 13.000 pulau.  \n \n Apakah ada yang bisa saya bantu lagi?"
+  - text: |-
+      Contoh penerapan penggunaaan titik pada bilangan adalah : 
+       Indonesia memiliki lebih dari 13.000 pulau.  
+       
+       Apakah ada yang bisa saya bantu lagi?
   utter_ttk_alamat:
-  - text: "Contoh penerapan penggunaaan titik pada alamat adalah : \n Jln. Malioboro\
-      \  \n \n Apakah ada yang bisa saya bantu lagi?"
+  - text: |-
+      Contoh penerapan penggunaaan titik pada alamat adalah : 
+       Jln. Malioboro  
+       
+       Apakah ada yang bisa saya bantu lagi?
   utter_koma:
-  - text: "Anda telah memilih PENGGUNAAN KOMA ! Penggunaan koma bisa dipakai untuk\
-      \ memisahkan kalimat. Namun tidak hanya itu loh fungsinya ! \n Silahkan memilih\
-      \ sub menu penggunaaan koma yaa : \ \n 1). Penggunaan koma pada antar kata  \n\
-      \ 2). Penggunaan koma pada penghubung  \n 3). Penggunaan koma pada pemisah \
-      \ \n 4). Penggunaan koma pada angka desimal  \n Mana yang ingin kamu pilih?\
-      \ silahkan ketik yaaaa (:"
+  - text: |-
+      Anda telah memilih PENGGUNAAN KOMA ! Penggunaan koma bisa dipakai untuk memisahkan kalimat. Namun tidak hanya itu loh fungsinya ! 
+       Silahkan memilih sub menu penggunaaan koma yaa :  
+       1). Penggunaan koma pada antar kata  
+       2). Penggunaan koma pada penghubung  
+       3). Penggunaan koma pada pemisah  
+       4). Penggunaan koma pada angka desimal  
+       Mana yang ingin kamu pilih? silahkan ketik yaaaa (:
   utter_k_antarkata:
-  - text: "Contoh penerapan penggunaaan koma pada antar kata adalah : \n Telepon seluler,\
-      \ komputer, atau internet bukanlah barang asing lagi.  \n \n Apakah ada yang\
-      \ bisa saya bantu lagi?"
+  - text: |-
+      Contoh penerapan penggunaaan koma pada antar kata adalah : 
+       Telepon seluler, komputer, atau internet bukanlah barang asing lagi.  
+       
+       Apakah ada yang bisa saya bantu lagi?
   utter_k_penghubung:
-  - text: "Contoh penerapan penggunaaan koma pada penghubung adalah : \n Saya ingin\
-      \ membeli kamera, tetapi uang saya belum cukup.  \n \n Apakah ada yang bisa\
-      \ saya bantu lagi?"
+  - text: |-
+      Contoh penerapan penggunaaan koma pada penghubung adalah : 
+       Saya ingin membeli kamera, tetapi uang saya belum cukup.  
+       
+       Apakah ada yang bisa saya bantu lagi?
   utter_k_pemisah:
-  - text: "Contoh penerapan penggunaaan koma pada pemisah adalah : \n Kalau diundang,\
-      \ saya akan datang.  \n \n Apakah ada yang bisa saya bantu lagi?"
+  - text: |-
+      Contoh penerapan penggunaaan koma pada pemisah adalah : 
+       Kalau diundang, saya akan datang.  
+       
+       Apakah ada yang bisa saya bantu lagi?
   utter_k_angkadesimal:
-  - text: "Contoh penerapan penggunaaan koma pada angka desimal adalah : \n 12,5 m\
-      \  \n \n Apakah ada yang bisa saya bantu lagi?"
+  - text: |-
+      Contoh penerapan penggunaaan koma pada angka desimal adalah : 
+       12,5 m  
+       
+       Apakah ada yang bisa saya bantu lagi?
+actions:
+- action_nama_saya
+forms: {}
+e2e_actions: []

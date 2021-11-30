@@ -2,6 +2,11 @@ version: "2.0"
 
 stories:
 
+- story: nama
+  steps :
+    - intent: nama_saya
+    - action: action_nama_saya
+
 - story: welcome
   steps :
     - intent: menyapa
@@ -14,7 +19,6 @@ stories:
 
 - story: G_ku
   steps:
-
     - intent: kataganti
     - action: utter_kataganti
     - intent: G_ku
