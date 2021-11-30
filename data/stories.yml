@@ -1,0 +1,304 @@
+version: "2.0"
+
+stories:
+
+- story: welcome
+  steps :
+    - intent: menyapa
+    - action: utter_greet
+
+- story: tolak
+  steps :
+    - intent: tolak
+    - action: utter_bye
+
+# - story: ulang
+#   steps :
+#     - intent: terima
+#     - action: utter_greet
+
+- story: KG_ku
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: kataganti
+    - action: utter_kataganti
+    - intent: KG_ku
+    - action: utter_KG_ku
+    - intent: tolak
+    - action: utter_bye
+
+- story: KG_ku ulang
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: kataganti
+    - action: utter_kataganti
+    - intent: KG_ku
+    - action: utter_KG_ku
+    - intent: menyapa
+    - action: utter_greet
+
+- story: KG_kau
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: kataganti
+    - action: utter_kataganti
+    - intent: KG_kau
+    - action: utter_KG_kau
+    - intent: tolak
+    - action: utter_bye
+
+- story: KG_kau ulang
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: kataganti
+    - action: utter_kataganti
+    - intent: KG_kau
+    - action: utter_KG_kau
+    - intent: menyapa
+    - action: utter_greet
+
+- story: KG_mu
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: kataganti
+    - action: utter_kataganti
+    - intent: KG_mu
+    - action: utter_KG_mu
+    - intent: tolak
+    - action: utter_bye
+
+- story: KG_mu ulang
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: kataganti
+    - action: utter_kataganti
+    - intent: KG_mu
+    - action: utter_KG_mu
+    - intent: menyapa
+    - action: utter_greet
+
+- story: KG_nya
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: kataganti
+    - action: utter_kataganti
+    - intent: KG_nya
+    - action: utter_KG_nya
+    - intent: tolak
+    - action: utter_bye
+
+- story: KG_nya ulang
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: kataganti
+    - action: utter_kataganti
+    - intent: KG_nya
+    - action: utter_KG_nya
+    - intent: menyapa
+    - action: utter_greet
+
+- story: KS_si
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: katasandang
+    - action: utter_katasandang
+    - intent: KS_si
+    - action: utter_KS_si
+    - intent: tolak
+    - action: utter_bye
+
+- story: KS_si ulang
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: katasandang
+    - action: utter_katasandang
+    - intent: KS_si
+    - action: utter_KS_si
+    - intent: menyapa
+    - action: utter_greet
+
+- story: KS_sang
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: katasandang
+    - action: utter_katasandang
+    - intent: KS_sang
+    - action: utter_KS_sang
+    - intent: tolak
+    - action: utter_bye
+
+- story: KS_sang ulang
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: katasandang
+    - action: utter_katasandang
+    - intent: KS_sang
+    - action: utter_KS_sang
+    - intent: menyapa
+    - action: utter_greet
+
+- story: t_akhirkata
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: titik
+    - action: utter_titik
+    - intent: t_akhir
+    - action: utter_t_akhir
+    - intent: tolak
+    - action: utter_bye
+
+- story: t_akhirkata ulang
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: titik
+    - action: utter_titik
+    - intent: t_akhir
+    - action: utter_t_akhir
+    - intent: menyapa
+    - action: utter_greet
+
+- story: t_bilangan
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: titik
+    - action: utter_titik
+    - intent: t_bilangan
+    - action: utter_t_bilangan
+    - intent: tolak
+    - action: utter_bye
+
+- story: t_bilangan ulang
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: titik
+    - action: utter_titik
+    - intent: t_bilangan
+    - action: utter_t_bilangan
+    - intent: menyapa
+    - action: utter_greet
+
+- story: t_alamat
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: titik
+    - action: utter_titik
+    - intent: t_alamat
+    - action: utter_t_alamat
+    - intent: tolak
+    - action: utter_bye
+
+- story: t_alamat ulang
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: titik
+    - action: utter_titik
+    - intent: t_alamat
+    - action: utter_t_alamat
+    - intent: menyapa
+    - action: utter_greet
+
+- story: k_antarkata
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: koma
+    - action: utter_koma
+    - intent: k_antarkata
+    - action: utter_k_antarkata
+    - intent: tolak
+    - action: utter_bye
+
+- story: k_antarkata ulang
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: koma
+    - action: utter_koma
+    - intent: k_antarkata
+    - action: utter_k_antarkata
+    - intent: menyapa
+    - action: utter_greet
+
+- story: k_penghubung
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: koma
+    - action: utter_koma
+    - intent: k_penghubung
+    - action: utter_k_penghubung
+    - intent: tolak
+    - action: utter_bye
+
+- story: k_penghubung ulang
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: koma
+    - action: utter_koma
+    - intent: k_penghubung
+    - action: utter_k_penghubung
+    - intent: menyapa
+    - action: utter_greet
+
+- story: k_pemisah
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: koma
+    - action: utter_koma
+    - intent: k_pemisah
+    - action: utter_k_pemisah
+    - intent: tolak
+    - action: utter_bye
+
+- story: k_pemisah ulang
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: koma
+    - action: utter_koma
+    - intent: k_pemisah
+    - action: utter_k_pemisah
+    - intent: menyapa
+    - action: utter_greet
+
+- story: k_angkadesimal
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: koma
+    - action: utter_koma
+    - intent: k_angkadesimal
+    - action: utter_k_angkadesimal
+    - intent: tolak
+    - action: utter_bye
+
+- story: k_angkadesimal ulang
+  steps:
+    # - intent: menyapa
+    # - action: utter_greet
+    - intent: koma
+    - action: utter_koma
+    - intent: k_angkadesimal
+    - action: utter_k_angkadesimal
+    - intent: menyapa
+    - action: utter_greet

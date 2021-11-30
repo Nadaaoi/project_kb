@@ -1,0 +1,222 @@
+version: "2.0"
+nlu:
+
+- intent: menyapa
+  examples: |
+    - hai
+    - hallo
+    - halo
+    - hey
+    - assalamualaikum
+    - permisi
+    - selamat pagi
+    - selamat siang
+    - selamat malam
+    - iya
+    - ya 
+    - yes
+    - ada
+    - lagi
+
+- intent: tolak
+  examples: |
+    - tidak
+    - nggak
+    - gak 
+    - ga
+    - no
+    - gk 
+    - cukup
+
+# - intent: terima
+#   examples: |
+#     - iya
+#     - ya 
+#     - yes
+#     - ada
+#     - lagi
+
+- intent: kataganti
+  examples: |
+    - kata ganti
+    - Kata Ganti
+    - saya memilih kata ganti
+    - Saya memilih kata ganti
+    - pilih kata ganti
+    - Pilih kata ganti
+    - ganti
+    - Ganti 
+
+- intent: KG_ku
+  examples: |
+    - kata ganti kata ku
+    - kata ganti ku 
+    - ku
+    - Ku
+    - Kata Ganti Ku
+    - Saya pilih kata ganti Ku
+    - Saya pilih kata ganti ku
+
+- intent: KG_kau
+  examples: |
+    - kata ganti kata kau
+    - kata ganti kau 
+    - kau
+    - Kau
+    - Kata Ganti Kau
+    - Saya pilih kata ganti kau
+    - Saya pilih kata ganti kau
+
+- intent: KG_mu
+  examples: |
+    - kata ganti kata mu
+    - kata ganti mu
+    - mu
+    - Mu
+    - Kata Ganti Mu
+    - Kata ganti mu
+    - Saya pilih kata ganti Mu
+    - Saya pilih kata ganti mu 
+
+- intent: KG_nya
+  examples: |
+    - kata ganti kata nya
+    - kata ganti nya 
+    - nya
+    - Nya
+    - Kata Ganti Nya
+    - Saya pilih kata ganti nya
+    - Saya pilih kata ganti Nya
+
+- intent: katasandang
+  examples: |
+    - kata sandang
+    - Kata Sandang
+    - saya memilih kata sandang
+    - Saya memilih kata sandang
+    - pilih kata sandang
+    - Pilih kata sandang
+    - sandang
+    - Sandang
+
+- intent: KS_si
+  examples: |
+    - kata ganti sandang si
+    - kata ganti si 
+    - si
+    - Si
+    - Kata Ganti Si
+    - Saya pilih kata sandang si
+    - Saya pilih kata sandang Si
+
+- intent: KS_sang
+  examples: |
+    - kata ganti sandang sang
+    - kata ganti sang 
+    - sang
+    - Sang
+    - Kata Ganti Sang
+    - Saya pilih kata sandang sang
+    - Saya pilih kata sandang Sang
+
+- intent: titik
+  examples: |
+    - kata titik
+    - Kata Titik
+    - saya memilih kata titik
+    - Saya memilih penggunaan kata titik
+    - pilih kata titik
+    - Pilih kata titik
+    - titik
+    - Titik
+    - penggunaan titik
+    - Penggunaan Titik
+    - saya memilih penggunaan titik
+
+- intent: t_akhir
+  examples: |
+    - akhir
+    - titik akhir kata
+    - Titik Akhir Kata
+    - akhir kata
+    - Akhir Kata
+    - penggunaan titik akhir kata
+    - Penggunaan titik akhir kata
+    - Penggunaan titik pada akhir kata
+
+- intent: t_bilangan
+  examples: |
+    - titik bilangan
+    - Titik Bilangan
+    - bilangan
+    - Bilangan
+    - penggunaan titik bilangan
+    - Penggunaan titik bilangan
+    - Penggunaan titik pada bilangan
+ 
+
+- intent: t_alamat
+  examples: |
+    - titik alamat
+    - Titik Alamat
+    - alamat
+    - Alamat
+    - penggunaan titik alamat
+    - Penggunaan titik alamat
+    - Penggunaan titik pada alamat
+ 
+
+- intent: koma
+  examples: |
+    - kata koma
+    - Kata Koma
+    - saya memilih kata koma
+    - Saya memilih penggunaan kata koma
+    - pilih kata koma
+    - Pilih kata koma
+    - koma
+    - Koma
+    - penggunaan koma
+    - Penggunaan Koma
+    - saya memilih penggunaan koma
+
+- intent: k_antarkata
+  examples: |
+    - penggunaan koma antar kata
+    - Penggunaan Koma Antar Kata
+    - Penggunaan koma pada antar kata
+    - koma antar kata
+    - Koma Antar Kata
+    - antar kata
+    - Antar Kata  
+
+- intent: k_penghubung
+  examples: |
+    - penggunaan koma penghubung
+    - Penggunaan Koma Penghubung
+    - Penggunaan koma pada penghubung
+    - koma penghubung
+    - Koma Penghubung
+    - Penghubung
+    - penghubung
+
+- intent: k_pemisah
+  examples: |
+    - penggunaan koma pemisah
+    - Penggunaan Koma Pemisah
+    - Penggunaan koma pada pemisah
+    - koma pemisah
+    - Koma Pemisah
+    - Pemisah
+    - pemisah 
+
+- intent: k_angkadesimal
+  examples: |
+    - penggunaan koma angka desimal
+    - Penggunaan Koma Angka Desimal
+    - Penggunaan koma pada angka desimal
+    - koma angka desimal
+    - Koma Angka Desimal
+    - Angka Desimal
+    - angka desimal
+  
